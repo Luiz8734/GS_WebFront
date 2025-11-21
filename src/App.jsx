@@ -5,7 +5,7 @@ import ModalPerfil from './components/ModalPerfil';
 import ModalMensagem from './components/ModalMensagem';
 import BarraBusca from './components/BarraBusca';
 import Filtros from './components/Filtros ';
-import ToggleModoEscuro from './components/ToggleModoEscuro';
+import ToggleModoEscuro from './components/ToggleModoEscur';
 
 /**
  * Componente principal da aplicação
