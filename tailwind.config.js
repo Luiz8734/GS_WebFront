@@ -10,7 +10,7 @@ export default {
       colors: {
         // Tons de azul profissional
         azul: {
-          escuro: '#0a1929',
+          escuro: '#0a1928',
           medio: '#1e3a5f',
           claro: '#3b82f6',
           suave: '#60a5fa',
