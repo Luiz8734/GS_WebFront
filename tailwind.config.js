@@ -14,7 +14,7 @@ export default {
           medio: '#1e3a5f',
           claro: '#3b82f6',
           suave: '#60a5fa',
-          claroBg: '#e0f2fe',
+          claroBg: '#e0f2fe' ,
         },
         cinza: {
           suave: '#f3f4f6',
