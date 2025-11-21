@@ -182,4 +182,3 @@ Verifique porta 5173 ou altere no vite.config.js.
 
 Verifique localStorage ou limpe cache
 
-## 💙 Desenvolvido com React, Vite e Tailwind
