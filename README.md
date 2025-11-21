@@ -21,6 +21,11 @@ modais interativos.
 | 562142 | Luiz Antonio Morais |
 | 561997 | Nicolas Barnabe     |
 
+## 🔗 **Links**
+
+-   Repositório: *[https://github.com/Luiz8734/GS_WebFront.git]*\
+-   Deploy: *[https://gs-web-front-akc4lknnk-luizs-projects-af0b9de9.vercel.app/]*
+-   
 
 ## 🚀 **Tecnologias Utilizadas**
 
@@ -150,10 +155,7 @@ Exibe um alerta confirmando a recomendação.
 
 Abre modal com formulário.
 
-## 🔗 **Links**
 
--   Repositório: *[https://github.com/Luiz8734/GS_WebFront.git]*\
--   Deploy: *[https://gs-web-front-akc4lknnk-luizs-projects-af0b9de9.vercel.app/]*
 
 
 ## 📝 **Notas Adicionais**
