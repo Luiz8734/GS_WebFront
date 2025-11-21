@@ -174,7 +174,7 @@ function App() {
       <footer className="bg-white dark:bg-azul-escuro border-t-4 border-azul-claro dark:border-azul-medio mt-16 shadow-xl">
         <div className="container mx-auto px-4 py-6 text-center">
           <p className="text-azul-medio dark:text-azul-suave font-medium">
-            © 2024 Rede Profissional - Plataforma de Conexão Profissional
+            © 2025 Rede Profissional - Plataforma de Conexão Profissional
           </p>
         </div>
       </footer>
