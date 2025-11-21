@@ -1,240 +1,183 @@
-# LinkedIn Professional - Plataforma de Conexão Profissional
+# 🌐 **LinkedIn Professional --- Plataforma de Conexão Profissional**
 
-Uma aplicação web moderna e responsiva inspirada no LinkedIn, focada no futuro do trabalho, conectando pessoas e explorando competências técnicas e comportamentais.
+Uma aplicação web moderna e responsiva inspirada no LinkedIn, focada no
+futuro do trabalho e na conexão entre profissionais. A plataforma simula
+uma rede profissional completa, permitindo busca, filtros, visualização
+de perfis detalhados e interação com profissionais fictícios.
 
-## 📋 Sobre o Projeto
+## 📋 **Sobre o Projeto**
 
-Esta é uma Single Page Application (SPA) desenvolvida com React e Vite, que simula uma plataforma profissional para conectar profissionais. A aplicação exibe uma listagem de 60 profissionais fictícios com informações completas, permitindo busca, filtros e visualização detalhada de perfis.
+O **LinkedIn Professional** é uma **Single Page Application (SPA)**
+desenvolvida com **React + Vite**, apresentando uma listagem de **60
+profissionais fictícios** com dados completos, fotos, habilidades e
+histórico profissional.\
+A aplicação oferece busca, filtros dinâmicos, dark mode persistente e
+modais interativos.
 
-## 🚀 Tecnologias Utilizadas
+## 👥 **Integrantes do Grupo**
 
-- **React 18.2.0** - Biblioteca JavaScript para construção de interfaces
-- **Vite 5.0.8** - Build tool e dev server
-- **Tailwind CSS 3.4.0** - Framework CSS utilitário
-- **HTML5** - Estrutura da aplicação
-- **JavaScript (ES6+)** - Linguagem de programação
+|     RM | Nome                |
+| -----: | ------------------- |
+| 562142 | Luiz Antonio Morais |
+| 561997 | Nicolas Barnabe     |
 
-## ✨ Funcionalidades
 
-- ✅ Listagem de 60 profissionais fictícios completos
-- ✅ Cards de profissionais com foto, nome, cargo e principais skills
-- ✅ Modal de perfil completo com todas as informações
-- ✅ Sistema de busca por nome
-- ✅ Filtros por área de atuação, cidade e tecnologia
-- ✅ Dark Mode completo com toggle e persistência (localStorage)
-- ✅ Modal de mensagem com formulário funcional
-- ✅ Botão "Recomendar profissional" com alerta
-- ✅ Design moderno, responsivo e elegante
-- ✅ Animações suaves e transições
-- ✅ Grid fluido e layout adaptativo
+## 🚀 **Tecnologias Utilizadas**
 
-## 📦 Estrutura de Dados
+-   **React 18.2.0**
+-   **Vite 5.0.8**
+-   **Tailwind CSS 3.4.0**
+-   **HTML5**
+-   **JavaScript ES6+**
 
-Cada profissional possui:
-- ID único
-- Nome, foto (gerada via DiceBear API), gênero, email e cidade
-- Cargo, descrição e resumo profissional
-- Localização e área de atuação
-- Habilidades técnicas (hard skills)
-- Soft skills
-- Experiências profissionais (empresa, cargo, datas, descrição)
-- Formação acadêmica (curso, instituição, ano)
-- Projetos (título, link, descrição)
-- Certificações relevantes
-- Idiomas com níveis
-- Áreas de interesse
+## ✨ **Funcionalidades**
 
-## 🛠️ Instalação
+-   ✔️ Listagem de 60 profissionais fictícios\
+-   ✔️ Cards com foto, nome, cargo e skills principais\
+-   ✔️ Modal de perfil completo\
+-   ✔️ Sistema de busca por nome (dinâmico)\
+-   ✔️ Filtros por **área**, **cidade** e **tecnologia**\
+-   ✔️ Dark Mode com **persistência (localStorage)**\
+-   ✔️ Modal de envio de mensagem\
+-   ✔️ Botão "Recomendar profissional"\
+-   ✔️ Layout moderno, responsivo e elegante\
+-   ✔️ Animações suaves e transições\
+-   ✔️ Grid fluido e adaptativo
 
-### Pré-requisitos
+## 📦 **Estrutura de Dados dos Profissionais**
 
-- Node.js (versão 16 ou superior)
-- npm ou yarn
+Cada profissional contém:
 
-### Passos para Instalação
+-   ID único\
+-   Nome, foto (via API DiceBear), gênero, email\
+-   Cargo e resumo profissional\
+-   Cidade e área de atuação\
+-   **Hard skills**\
+-   **Soft skills**\
+-   Experiências profissionais\
+-   Formação acadêmica\
+-   Projetos\
+-   Certificações\
+-   Idiomas\
+-   Áreas de interesse
 
-1. **Clone o repositório ou navegue até o diretório do projeto**
+## 🛠️ **Instalação**
 
-```bash
-cd Gd_WebFront_Linkdin
-```
+### ✔ Pré-requisitos
 
-2. **Instale as dependências**
+-   Node.js 16+
+-   npm ou yarn
 
-```bash
-npm install
-```
+### ✔ Passos
 
-3. **Inicie o servidor de desenvolvimento**
+1.  Entre no diretório do projeto:
 
-```bash
-npm run dev
-```
+    ``` bash
+    cd Gd_WebFront_Linkdin
+    ```
 
-4. **Acesse a aplicação**
+2.  Instale as dependências:
 
-Abra seu navegador e acesse: `http://localhost:5173`
+    ``` bash
+    npm install
+    ```
 
-### Build para Produção
+3.  Inicie o servidor:
 
-Para criar uma build de produção:
+    ``` bash
+    npm run dev
+    ```
 
-```bash
+4.  Acesse:
+
+        http://localhost:5173
+
+## 📦 **Build para Produção**
+
+``` bash
 npm run build
 ```
 
-Para visualizar a build de produção:
+Pré-visualização da build:
 
-```bash
+``` bash
 npm run preview
 ```
 
-## 📁 Estrutura do Projeto
+## 📁 **Estrutura do Projeto**
 
-```
-Gd_WebFront_Linkdin/
-├── src/
-│   ├── components/
-│   │   ├── CartaoPessoa.jsx          # Card de profissional
-│   │   ├── ModalPerfil.jsx           # Modal de perfil completo
-│   │   ├── ModalMensagem.jsx         # Modal de mensagem
-│   │   ├── BarraBusca.jsx            # Barra de busca
-│   │   ├── Filtros.jsx               # Componente de filtros
-│   │   └── ToggleModoEscuro.jsx     # Toggle de dark mode
-│   ├── data/
-│   │   └── profissionais.json        # Dados dos 60 profissionais
-│   ├── App.jsx                        # Componente principal
-│   ├── main.jsx                       # Entry point
-│   └── index.css                     # Estilos globais (Tailwind)
-├── index.html                         # HTML principal
-├── package.json                       # Dependências do projeto
-├── vite.config.js                    # Configuração do Vite
-├── tailwind.config.js                # Configuração do Tailwind
-├── postcss.config.js                 # Configuração do PostCSS
-└── README.md                          # Este arquivo
-```
+    Gd_WebFront_Linkdin/
+    ├── src/
+    │   ├── components/
+    │   ├── data/
+    │   ├── App.jsx
+    │   ├── main.jsx
+    │   └── index.css
+    ├── index.html
+    ├── package.json
+    ├── vite.config.js
+    ├── tailwind.config.js
+    ├── postcss.config.js
+    └── README.md
 
-## 🎨 Componentes
+## 🎨 **Componentes**
 
-### CartaoPessoa
-Exibe um card com informações resumidas do profissional (foto circular, nome, cargo, localização e principais skills). Ao clicar no card, abre o modal de perfil completo.
+Descrição detalhada dos componentes como: CartaoPessoa, ModalPerfil,
+ModalMensagem, BarraBusca, Filtros e ToggleModoEscuro.
 
-### ModalPerfil
-Modal completo que exibe todas as informações do profissional, incluindo:
-- Dados pessoais e profissionais (nome, cargo, email, cidade, gênero, descrição)
-- Habilidades técnicas e soft skills
-- Experiências profissionais detalhadas
-- Formação acadêmica
-- Projetos com links
-- Certificações
-- Idiomas com níveis
-- Áreas de interesse
-- Botões de ação (Recomendar e Enviar Mensagem)
+## 🌙 **Dark Mode**
 
-### ModalMensagem
-Modal com formulário para envio de mensagem ao profissional, incluindo campos para assunto e mensagem.
+Persistência no localStorage, transições suaves e suporte completo a
+todos os componentes.
 
-### BarraBusca
-Barra de busca para filtrar profissionais por nome, com busca case-insensitive em tempo real.
+## 🔍 **Busca + Filtros Avançados**
 
-### Filtros
-Componente de filtros com três opções dinâmicas:
-- Área de atuação (extraída automaticamente dos dados)
-- Cidade (extraída automaticamente dos dados)
-- Tecnologia (extraída das habilidades técnicas)
+Combinação dinâmica de filtros com contador de resultados.
 
-### ToggleModoEscuro
-Botão flutuante no canto superior direito para alternar entre modo claro e escuro, com persistência no localStorage e animações suaves.
+## 📱 **Responsividade**
 
-## 🌙 Dark Mode
+Grid adaptativo: - Mobile: 1 coluna\
+- Tablet: 2 colunas\
+- Desktop: 3--4 colunas
 
-O Dark Mode está totalmente implementado com:
-- Toggle flutuante no canto superior direito
-- Persistência da preferência no localStorage
-- Transições suaves entre temas
-- Suporte completo em todos os componentes
+## 🎯 **Ações Disponíveis**
 
-## 🔍 Sistema de Busca e Filtros
+### ⭐ Recomendar
 
-A aplicação possui um sistema completo de busca e filtros:
-- **Busca**: Filtra profissionais por nome (case-insensitive)
-- **Filtros**: 
-  - Por área de atuação
-  - Por cidade/localização
-  - Por tecnologia/habilidade técnica
-- Os filtros podem ser combinados
-- Contador de resultados exibido dinamicamente
+Exibe um alerta confirmando a recomendação.
 
-## 📱 Responsividade
+### ✉️ Enviar Mensagem
 
-A aplicação é totalmente responsiva, adaptando-se a diferentes tamanhos de tela:
-- Mobile: 1 coluna
-- Tablet: 2 colunas
-- Desktop: 3-4 colunas
-- Grid fluido e adaptativo
+Abre modal com formulário.
 
-## 🎯 Funcionalidades dos Botões
+## 🔗 **Links**
 
-### Recomendar Profissional
-Ao clicar no botão "Recomendar profissional" no modal de perfil, um alerta é exibido confirmando a recomendação.
+-   Repositório: *[https://github.com/Luiz8734/GS_WebFront.git]*\
+-   Deploy: *[https://gs-web-front-akc4lknnk-luizs-projects-af0b9de9.vercel.app/]*
 
-### Enviar Mensagem
-Ao clicar no botão "Enviar mensagem", um modal com formulário é aberto, permitindo:
-- Inserir assunto da mensagem
-- Escrever a mensagem
-- Enviar (exibe alerta com os dados)
-- Cancelar
 
-## 🔗 Links
+## 📝 **Notas Adicionais**
 
-- **Repositório**: [Adicione o link do repositório GitHub aqui]
-- **Deploy**: [Adicione o link do deploy aqui quando disponível]
+-   Dados fictícios\
+-   Imagens via DiceBear\
+-   SPA sem backend\
+-   Paleta moderna (azul escuro, azul claro, branco, cinza)
 
-## 👥 Integrantes do Grupo
+## 🐛 **Troubleshooting**
 
-*Por favor, atualize esta seção com os nomes e RMs reais dos integrantes do grupo.*
+### ❗ Erro ao instalar dependências
 
-- **Nome do Integrante 1** - RM: [RM]
-- **Nome do Integrante 2** - RM: [RM]
-- **Nome do Integrante 3** - RM: [RM]
-
-## 🎯 Usuários e Senhas
-
-Esta aplicação não possui sistema de autenticação, sendo uma SPA pública que pode ser acessada por qualquer usuário sem necessidade de login.
-
-## 📝 Notas Adicionais
-
-- Todos os dados são fictícios e servem apenas para demonstração
-- As fotos dos profissionais são geradas usando a API DiceBear (https://api.dicebear.com/7.x/avataaars/svg?seed=NomeDaPessoa)
-- Os links de projetos são exemplos e não são funcionais
-- A aplicação não possui backend, sendo uma SPA pura
-- Todos os componentes e variáveis estão nomeados em português
-- O projeto utiliza Tailwind CSS com uma paleta de cores personalizada (azul escuro, azul claro, branco e cinza suave)
-
-## 🐛 Troubleshooting
-
-### Problemas Comuns
-
-**Erro ao instalar dependências:**
-```bash
-# Limpe o cache do npm e tente novamente
+``` bash
 npm cache clean --force
 npm install
 ```
 
-**Erro ao iniciar o servidor:**
-- Verifique se a porta 5173 está disponível
-- Tente usar uma porta diferente modificando `vite.config.js`
+### ❗ Erro ao iniciar servidor
 
-**Dark Mode não persiste:**
-- Verifique se o localStorage está habilitado no navegador
-- Limpe o cache do navegador e tente novamente
+Verifique porta 5173 ou altere no vite.config.js.
 
-## 📄 Licença
+### ❗ Dark Mode não persiste
 
-Este projeto foi desenvolvido para fins educacionais.
+Verifique localStorage ou limpe cache
 
----
-
-**Desenvolvido com ❤️ usando React, Vite e Tailwind CSS**
-
+## 💙 Desenvolvido com React, Vite e Tailwind
